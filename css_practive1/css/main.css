@@ -1,0 +1,910 @@
+/* COMMON */
+body{
+  position: relative;
+
+  width: 1440px;
+  height: 1024px;
+  
+  background: #FFFFFF;
+
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.alarm{
+  width: 4px;
+  height: 4px;
+
+  position: absolute;
+  right: 12px;
+  top: 0;
+
+  z-index: 1;
+
+  border-radius: 2px;
+  background-color: red;
+}
+
+/* HEADER */
+
+.header{
+  width: 100%;
+  height: 109px;
+
+  display: flex;
+
+  position: relative;
+}
+
+/* HEADER - logo and line */
+
+.header .logo-and-line {
+  width: 264px;
+  height: 92px;
+  
+  position: absolute;
+  left: 34px;
+  top: 2px;
+
+  border-bottom: 0.5px solid #CBD5E1;
+}
+
+.header .logo-and-line .logo{ 
+  position: absolute;
+  top: 0.12px;
+  bottom: 0.12px;
+  left: 20px;
+  right: 20px;
+
+  z-index: 1;
+  
+  display: flex;
+  align-items: center;
+}
+
+.header .logo-and-line .logo > span{
+  font-weight: 600;
+  font-size: 55px;
+  letter-spacing: 0.1px;
+
+  color: #1E293B;
+}
+
+.header .logo-and-line .line{
+  position: absolute;
+  left: 30px; 
+  right: 6.69px;
+  top: 39.84px;
+  bottom: 12.37px;
+
+  width: 189px;
+  height: 33px;
+  
+  background-color: #77A7F5;
+}
+
+/* HEADER - menu */
+
+.header .menu{
+  width: 24px;
+  height: 24px;
+
+  position: absolute;
+  left: 297px;
+  top: 38.14px;
+}
+
+.header .menu .material-icons{
+  width: 24px;
+  height: 24px;
+
+  color: #3B82F6;
+}
+
+/* HEADER - text and icon */
+
+/* text and icon - text and icon1 */
+
+.header .text-and-icon1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: absolute;
+  left: 344.21px;
+  top: 38.14px;
+
+  width: 119px;
+  height: 24px;
+}
+
+
+.header .text-and-icon1 .text1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 91px;
+  height: 24px;
+  
+  flex: none;
+  order: 1;
+}
+
+.header .text-and-icon1 .text1 span{
+  font-size: 18px;
+}
+
+.header .text-and-icon1 .icon1{
+  width: 24px;
+  height: 24px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  order: 2;
+}
+
+/* text and icon - text and icon2 */
+
+.header .text-and-icon2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 119px;
+  height: 24px;
+  
+  position: absolute;
+  left: 501.21px;
+  top: 38.14px;
+}
+
+
+.header .text-and-icon2 .text2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 91px;
+  height: 24px;
+  
+  flex: none;
+  order: 1;
+}
+
+.header .text-and-icon2 .text2 span{
+  font-size: 18px;
+}
+
+.header .text-and-icon2 .icon2{
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  flex: none;
+  order: 2;
+}
+
+/* HEADER - contents */
+.header .contents{
+  display: flex;
+  align-items: center;
+
+  width: 748px;
+  height: 56px;
+
+  position: absolute;
+  left: 670.6px;
+  top: 17.69px
+}
+
+/* contents - search */
+.header .contents .search{
+  display: flex;
+  align-items: center;
+  
+  width: calc(224px + 48px);
+  height: auto;
+  
+  background: #EFF6FF;
+  border-radius: 4px;
+  
+  flex: none;
+  order: 1;
+}
+
+.header .contents .search .searchbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 12px;
+}
+
+.header .contents .search input{
+  padding: 0;
+  border-style: none;
+
+  width: 200px;
+  height: 24px;
+  
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.header .contents .search .material-icons{
+  padding: 12px;
+  
+  width: 24px;
+  height: 24px;
+
+  flex: none;
+  order: 1;
+}
+
+/* contents - icon group */
+.header .contents .icon-group{
+  display: flex;
+  align-items: center;
+  
+  width: calc(48px * 5);
+  height: 56px;
+
+  position: absolute;
+  left: 324.09px;
+
+  order: 2;
+}
+
+/* icon group - folder */
+.header .contents .icon-group .folder{
+  padding: 0 12px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  order: 1;
+}
+
+.header .contents .icon-group .folder .material-icons{
+  width: 24px;
+  height: 24px;
+}
+
+/* icon group - notification */
+.header .contents .icon-group .notification{
+  padding: 0 12px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  order: 2;
+
+  position: relative;
+}
+
+.header .contents .icon-group .notification .material-icons{
+  width: 24px;
+  height: 24px;
+}
+
+/* icon group - chat */
+.header .contents .icon-group .chat{
+  padding: 0 12px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  order: 3;
+}
+
+.header .contents .icon-group .chat .material-icons{
+  width: 24px;
+  height: 24px;
+}
+
+/* icon group - settings */
+.header .contents .icon-group .settings{
+  padding: 0 12px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  order: 4;
+}
+
+.header .contents .icon-group .settings .material-icons{
+  width: 24px;
+  height: 24px;
+}
+
+/* icon group - user */
+.header .contents .icon-group .user{
+  padding: 0 12px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  order: 5;
+
+  position: relative;
+}
+
+.header .contents .user .material-icons{
+  width: 24px;
+  height: 24px;
+}
+
+/* contents - user name */
+.header .contents .user-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 74px;
+  height: 24px;
+
+  position: absolute;
+  left: 600px;
+  
+  flex: none;
+  order: 3;
+}
+
+.header .contents .user-name .text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50px; 
+  height: 24px;
+
+  flex: none;
+  order: 1;
+}
+
+.header .contents .user-name .material-icons{
+  width: 24px;
+  height: 24px;
+
+  order: 2;
+}
+
+/* contents - account settings */
+.header .contents .account-settings{
+  position: absolute;
+  left: 700.6px;
+}
+
+.header .contents .account-settings .material-icons{
+  width: 24px;
+  height: 24px;
+}
+
+/* INFO */
+.info{
+  position: absolute;
+  left: 32px;
+  top: 109px;
+
+  width: 1386px;
+  height: 889px;
+  
+  background: #F8FBFF;
+  border-radius: 11px;
+}
+
+/* INFO-alien */
+.info .alien{
+  position: absolute;
+  left: 15px;
+  top: 36px;
+
+  width: 326px;
+  height: 385px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+}
+
+.info .alien .menu{
+  padding: 7px 0px;
+  
+  width: 288px;
+  height: 254px;
+
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  
+  background: #F8FAFC;
+  
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.info .alien .menu .menu_inner{
+  width: 100%;
+  height: 240px;
+}
+
+.info .alien .menu .menu_inner > div{
+  width: 100%;
+  height: calc(240px / 5);
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: relative;
+}
+
+.info .alien .menu .menu_inner > div > span{
+  padding: 0 0 0 12px;
+}
+
+.info .alien .description {
+  width: 326px;
+  height: calc(385px - 284px);
+
+  position: absolute;
+  top: 284px;
+}
+
+.info .alien .description .heading{
+  width: 100%;
+  height: 36px;
+}
+
+.info .alien .description .heading > span{
+  padding: 0 0 0 19px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 50px;
+}
+
+.info .alien .description .paragraph{
+  width: 100%;
+  height: 40px;
+}
+
+.info .alien .description .paragraph > span{
+  padding: 4px 19px 0;
+
+  display: inline-block;
+  
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #475569;
+}
+
+/* INFO - chart and slider */
+.info .chart-and-slider{
+  width: 326px;
+  height: 385px;
+
+  position: absolute;
+  left: 15px;
+  top: 457px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;  
+}
+
+.info .chart-and-slider .chart{
+  background-image: url(../images/Content.png);
+  background-position: 13px 52px;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 200px;
+}
+
+.info .chart-and-slider .slider{
+  background-image: url(../images/Slider.png);
+  background-position: 22.5px 67px;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: calc(385px - 200px);
+}
+
+/* INFO - card1 */
+.info .card1{
+  width: 364px;
+  height: 164px;
+
+  position: absolute;
+  left: 443px;
+  top: 40px;
+
+  background: #FFFFFF;
+  
+  box-shadow: 0px 3px 8px rgba(9, 30, 66, 0.16), 0px 0px 1px rgba(9, 30, 66, 0.31);
+  border-radius: 4px;
+}
+
+.info .card1 .text{
+  width: 324px;
+  height: auto;
+}
+
+.info .card1 .text .number{
+  padding: 20px 0 0 20px;
+}
+
+.info .card1 .text .number > span{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.info .card1 .text .description{
+  padding: 0 0 0 20px;
+}
+
+.info .card1 .text .description > span{
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #475569;
+}
+
+.info .card1 .figure{
+  width: 40px;
+  height: auto;
+  
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.info .card1 .figure .material-icons{
+  padding: 20px 0 0;
+  
+  width: 24px;
+  height: 24px;
+}
+
+
+.info .card1 .progress1{
+  width: 324px;
+  height: 4px;
+
+  background: #E2E8F0;
+  border-radius: 4px;
+
+  position: absolute;
+  left: 20.66px;
+  top: 114.11px;
+}
+
+.info .card1 .progress1 > div{
+  width: 150px;
+  height: 4px;
+  
+  background: #2563EB;
+  border-radius: 4px;
+}
+
+.info .card1 .progress2{
+  position: absolute;
+  left: 20.66px;
+  top: 130.11px;
+}
+
+.info .card1 .progress2 > div{
+  width: 150px;
+  height: 4px;
+  
+  background: #2563EB;
+  border-radius: 4px;
+}
+
+/* INFO - card2 */
+.info .card2{
+  width: 364px;
+  height: 164px;
+
+  position: absolute;
+  left: 443px;
+  top: 219px;
+  
+  background: #FFFFFF;
+  
+  box-shadow: 0px 3px 8px rgba(9, 30, 66, 0.16), 0px 0px 1px rgba(9, 30, 66, 0.31);
+  border-radius: 4px;
+}
+
+.info .card2 .text{
+  width: 100%;
+  height: auto;
+}
+
+.info .card2 .text .number{
+  padding: 20px 0 0 20px;
+}
+
+.info .card2 .text .number > span{
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.info .card2 .text .description{
+  padding: 0 0 0 20px;
+}
+
+.info .card2 .text .description > span{
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #475569;
+}
+
+.info .card2 .figure{
+  width: 40px;
+  height: auto;
+  
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.info .card2 .figure .material-icons{
+  padding: 20px 0 0;
+  
+  width: 24px;
+  height: 24px;
+}
+
+.info .card2 .progress1{
+  width: 324px;
+  height: 4px;
+  
+  background: #E2E8F0;
+  border-radius: 4px;
+
+  position: absolute;
+  left: 20.66px;
+  top: 114.11px;
+}
+
+.info .card2 .progress1 > div{
+  width: 150px;
+  height: 4px;
+  
+  background: #2563EB;
+  border-radius: 4px;
+}
+
+.info .card2 .progress2{
+  position: absolute;
+  left: 20.66px;
+  top: 130.11px;
+}
+.info .card2 .progress2 > div{
+  width: 150px;
+  height: 4px;
+  
+  background: #2563EB;
+  border-radius: 4px;
+}
+
+/* INFO - pentagon1 */
+.info .pentagon1{
+  width: 436px;
+  height: 421px;
+
+  position: absolute;
+  left: 443px;
+  top: 421px;
+  
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+}
+
+.info .pentagon1 .chart{
+  background-image: url(../images/v1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 436px;
+  height: 421px;
+}
+
+/* INFO - pentagon2 */
+.info .pentagon2{
+  width: 457px;
+  height: 421px;
+
+  position: absolute;
+  left: 907px;
+  top: 36px;
+  
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+}
+
+.info .pentagon2 .chart{
+  background-image: url(../images/v2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 457px;
+  height: 421px;
+}
+
+/* INFO - namuwiki */
+.info .namuwiki{
+  padding: 20px;
+
+  width: 354px;
+  height: 309px;
+
+  position: absolute;
+  left: 970px;
+  top: 493px;
+  
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+}
+
+.info .namuwiki .namuwiki_inner{
+  padding: 24px 0px 0px;
+
+  width: 364px;
+  height: 289px;
+  
+  background: #EFF6FF;
+  border-radius: 28px;
+}
+
+.info .namuwiki .namuwiki_inner .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .namuwiki .namuwiki_inner .top{
+  width: 100%;
+  height: auto;
+}
+
+.info .namuwiki .namuwiki_inner .top .heading{
+  display: flex;
+  justify-content: center;
+}
+
+.info .namuwiki .namuwiki_inner .top .heading > span{
+  padding: 16px 0 0 ;
+
+  display: inline-block;
+  
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.info .namuwiki .namuwiki_inner .top .description{
+  display: flex;
+  justify-content: center;
+}
+
+.info .namuwiki .namuwiki_inner .top .description > span{
+  padding: 16px 24px 24px;
+
+  display: inline-block;
+}
+
+.info .namuwiki .namuwiki_inner .list{
+  width: calc(100% - 24px);
+  height: auto;
+}
+
+.info .namuwiki .namuwiki_inner .list .list1{
+  padding: 12px;
+
+  display: flex;
+
+  width: 100%;
+  height: 40px;
+
+  flex: none;
+}
+
+.info .namuwiki .namuwiki_inner .list .list1 .circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .namuwiki .namuwiki_inner .list .list1 .circle .circle_inner{
+  width: 32px;
+  height: 32px;
+
+  background-color: #d3d3d3;
+  border-radius: 16px;
+}
+
+.info .namuwiki .namuwiki_inner .list .list1 .text{
+  width: calc(100% - 72px);
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .namuwiki .namuwiki_inner .list .list1 .checkbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+}
+
+.info .namuwiki .namuwiki_inner .list .list2{
+  padding: 12px;
+
+  display: flex;
+
+  width: 100%;
+  height: 40px;
+
+  flex: none;
+}
+
+.info .namuwiki .namuwiki_inner .list .list2 .circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .namuwiki .namuwiki_inner .list .list2 .circle .circle_inner{
+  width: 32px;
+  height: 32px;
+
+  background-color: #d3d3d3;
+  border-radius: 16px;
+}
+
+.info .namuwiki .namuwiki_inner .list .list2 .text{
+  width: calc(100% - 72px);
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .namuwiki .namuwiki_inner .list .list2 .checkbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+}
+
+
+
